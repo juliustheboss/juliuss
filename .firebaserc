@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "production": "seeds-game",
+    "staging": "seeds-staging"
+  }
+}
