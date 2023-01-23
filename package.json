@@ -1,0 +1,40 @@
+{
+  "name": "seeds-game",
+  "version": "1.0.0",
+  "description": "A connect the dots game with seeds",
+  "scripts": {
+    "deploy-production": "npm run build && firebase deploy -P production --token $FIREBASE_TOKEN",
+    "deploy-staging:ci": "npm run build && firebase deploy -P staging --token $FIREBASE_TOKEN",
+    "deploy-staging": "npm run build && firebase deploy -P staging",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "review": "elm-review --fix-all",
+    "review:check": "elm-review",
+    "test": "elm-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewMacmurray/seeds-game.git"
+  },
+  "author": "Andrew MacMurray",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrewMacmurray/seeds-game/issues"
+  },
+  "homepage": "https://github.com/andrewMacmurray/seeds-game#readme",
+  "devDependencies": {
+    "@types/howler": "^2.2.2",
+    "elm": "^0.19.1-5",
+    "elm-format": "^0.8.5",
+    "elm-hot": "^1.1.6",
+    "elm-live": "^4.0.2",
+    "elm-review": "^2.5.1",
+    "elm-test": "^0.19.1-revision7",
+    "firebase-tools": "^9.11.0",
+    "howler": "^2.2.1",
+    "node-elm-compiler": "^5.0.6",
+    "parcel-bundler": "^1.9.4",
+    "pepjs": "^0.5.3",
+    "typescript": "^3.9.9"
+  }
+}
